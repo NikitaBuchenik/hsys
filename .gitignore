@@ -1,0 +1,11 @@
+build/
+.vscode/
+*.user
+*.suo
+*.vcxproj
+*.vcxproj.filters
+__pycache__/
+*.pyc
+complexity.png
+speedup.png
+results.csv
