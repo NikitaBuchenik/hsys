@@ -16,6 +16,7 @@ target_link_libraries(vector_benchmark
     PRIVATE
         vector_cuda
         benchmark::benchmark
+        Eigen3::Eigen
 )
 
 set_target_properties(vector_benchmark PROPERTIES
