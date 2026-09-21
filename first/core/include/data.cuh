@@ -95,7 +95,6 @@ public:
 private:
     void release() noexcept {
         if (data_ != nullptr) {
-            // Destructors cannot sensibly propagate CUDA errors.
             cudaFree(data_);
             data_ = nullptr;
         }
