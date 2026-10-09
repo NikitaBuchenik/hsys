@@ -1,0 +1,6 @@
+add_executable(matrix_benchmark src/matrix_benchmark.cpp)
+target_link_libraries(matrix_benchmark PRIVATE matrix_core eigen_headers benchmark::benchmark)
+target_compile_definitions(matrix_benchmark PRIVATE EIGEN_RUNTIME_NO_MALLOC EIGEN_STACK_ALLOCATION_LIMIT=8388608)
+if(MSVC)
+  target_link_options(matrix_benchmark PRIVATE /STACK:67108864)
+endif()
