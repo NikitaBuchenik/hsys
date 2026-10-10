@@ -1,0 +1,148 @@
+{
+  "context": {
+    "date": "2026-10-10T13:58:02+07:00",
+    "host_name": "DESKTOP-A51FFLC",
+    "executable": "build\\bin\\matrix_benchmark.exe",
+    "num_cpus": 12,
+    "mhz_per_cpu": 3793,
+    "caches": [
+      {
+        "type": "Data",
+        "level": 1,
+        "size": 32768,
+        "num_sharing": 2
+      },
+      {
+        "type": "Instruction",
+        "level": 1,
+        "size": 32768,
+        "num_sharing": 2
+      },
+      {
+        "type": "Unified",
+        "level": 2,
+        "size": 524288,
+        "num_sharing": 2
+      },
+      {
+        "type": "Unified",
+        "level": 3,
+        "size": 16777216,
+        "num_sharing": 6
+      }
+    ],
+    "load_avg": [],
+    "library_version": "v1.9.1",
+    "library_build_type": "release",
+    "json_schema_version": 1,
+    "compute_capability": "7.5",
+    "cuda_driver": "13020",
+    "cuda_runtime": "13020",
+    "eigen_threads": "1",
+    "gpu": "NVIDIA GeForce RTX 2060",
+    "measurement": "CUDA events around kernel inside operator*; Eigen steady_clock, preallocated output, no heap allocations"
+  },
+  "rows": [
+    {
+      "n": 16,
+      "cuda_seconds": 1.604597663782773e-05,
+      "eigen_seconds": 4.503944752547669e-07,
+      "speedup": 0.02806899732067292,
+      "cuda_min": 1.2787748248058934e-05,
+      "cuda_max": 2.455881130595958e-05,
+      "eigen_min": 4.4915800742212353e-07,
+      "eigen_max": 4.5167231429342666e-07,
+      "cuda_repetitions": 7,
+      "eigen_repetitions": 7
+    },
+    {
+      "n": 32,
+      "cuda_seconds": 1.4123381482241762e-05,
+      "eigen_seconds": 2.5070505140810813e-06,
+      "speedup": 0.17751064199698618,
+      "cuda_min": 1.24607538037279e-05,
+      "cuda_max": 1.8295892941317472e-05,
+      "eigen_min": 2.4981627179256336e-06,
+      "eigen_max": 2.5122217255249662e-06,
+      "cuda_repetitions": 7,
+      "eigen_repetitions": 7
+    },
+    {
+      "n": 64,
+      "cuda_seconds": 1.2073670988623273e-05,
+      "eigen_seconds": 1.826512763740372e-05,
+      "speedup": 1.5128064740719294,
+      "cuda_min": 1.047528585879349e-05,
+      "cuda_max": 1.4543699522014659e-05,
+      "eigen_min": 1.8241189111745974e-05,
+      "eigen_max": 1.8786832508464844e-05,
+      "cuda_repetitions": 7,
+      "eigen_repetitions": 7
+    },
+    {
+      "n": 128,
+      "cuda_seconds": 1.9572547351037516e-05,
+      "eigen_seconds": 0.000142338410931175,
+      "speedup": 7.272349805996501,
+      "cuda_min": 1.8537930208452995e-05,
+      "cuda_max": 2.1614576152169563e-05,
+      "eigen_min": 0.0001414152834008101,
+      "eigen_max": 0.00014358977732793348,
+      "cuda_repetitions": 7,
+      "eigen_repetitions": 7
+    },
+    {
+      "n": 256,
+      "cuda_seconds": 6.895930351155172e-05,
+      "eigen_seconds": 0.0011191011952191232,
+      "speedup": 16.228429497285408,
+      "cuda_min": 6.827827580565655e-05,
+      "cuda_max": 7.029233160472332e-05,
+      "eigen_min": 0.0011159772908366536,
+      "eigen_max": 0.001124968924302789,
+      "cuda_repetitions": 7,
+      "eigen_repetitions": 7
+    },
+    {
+      "n": 512,
+      "cuda_seconds": 0.0004772420694329303,
+      "eigen_seconds": 0.008973535483870967,
+      "speedup": 18.80290120804631,
+      "cuda_min": 0.00047620631409745726,
+      "cuda_max": 0.0004773558652928086,
+      "eigen_min": 0.008961770967741934,
+      "eigen_max": 0.008991883870967741,
+      "cuda_repetitions": 7,
+      "eigen_repetitions": 7
+    },
+    {
+      "n": 1024,
+      "cuda_seconds": 0.003851324933848969,
+      "eigen_seconds": 0.072532675,
+      "speedup": 18.833174620639372,
+      "cuda_min": 0.003813212917275623,
+      "cuda_max": 0.003864508935849961,
+      "eigen_min": 0.07215117500000001,
+      "eigen_max": 0.072739325,
+      "cuda_repetitions": 7,
+      "eigen_repetitions": 7
+    }
+  ],
+  "cuda_slopes": [
+    -0.18412605550570882,
+    -0.2262211534715257,
+    0.6969671408647982,
+    1.8169136695267636,
+    2.790904115448549,
+    3.012561718572743
+  ],
+  "eigen_slopes": [
+    2.4767300291708527,
+    2.8650288651790845,
+    2.9621612944390074,
+    2.9749435585412507,
+    3.0033360061188894,
+    3.014882646601325
+  ],
+  "source_sha256": "b27423706da9a2e9186efeca97bdc7db30d0c9ef5143658418fb85be2e8cbbe5"
+}
