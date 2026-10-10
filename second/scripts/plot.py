@@ -57,17 +57,19 @@ def main():
              'source_sha256':hashlib.sha256(args.json_file.read_bytes()).hexdigest()}
     (output/'summary.json').write_text(json.dumps(summary,ensure_ascii=False,indent=2),encoding='utf-8')
     fig=go.Figure()
-    for name,key,color in [('CUDA (kernel in operator*)','cuda','#166534'),('Eigen::MatrixXf (1 CPU thread)','eigen','#1d4ed8')]:
+    for name,key,color in [('CUDA: кернел operator*','cuda','#166534'),('Eigen::MatrixXf: 1 поток CPU','eigen','#1d4ed8')]:
         fig.add_trace(go.Scatter(x=SIZES,y=[r[key+'_seconds']*1000 for r in rows],name=name,mode='lines+markers',line_color=color,
             error_y=dict(type='data',symmetric=False,array=[(r[key+'_max']-r[key+'_seconds'])*1000 for r in rows],
                          arrayminus=[(r[key+'_seconds']-r[key+'_min'])*1000 for r in rows])))
-    fig.update_layout(title='Matrix multiplication: measured time (median, min/max)',template='plotly_white',
-                      xaxis_title='Matrix size n',yaxis_title='Time, ms',xaxis_type='log',yaxis_type='log',width=1100,height=650)
+    fig.update_layout(title='Время умножения матриц',template='plotly_white',font_size=21,
+                      xaxis_title='Размер матрицы n',yaxis_title='Время, мс',xaxis_type='log',yaxis_type='log',width=1100,height=650)
     speed=go.Figure(go.Scatter(x=SIZES,y=[r['speedup'] for r in rows],mode='lines+markers',name='Eigen / CUDA'))
     speed.add_hline(y=1,line_dash='dash')
-    speed.update_layout(title='Compute-only speedup: Eigen / CUDA',template='plotly_white',xaxis_title='Matrix size n',
-                        yaxis_title='Speedup, times',xaxis_type='log',width=1100,height=650)
+    speed.update_layout(title='Ускорение вычислений: Eigen / CUDA',template='plotly_white',font_size=21,xaxis_title='Размер матрицы n',
+                        yaxis_title='Ускорение, раз',xaxis_type='log',width=1100,height=650)
     for name,chart in [('complexity',fig),('speedup',speed)]:
+        chart.update_layout(legend=dict(orientation='h',y=-0.30,x=0),margin=dict(l=105,r=40,t=85,b=160),title_font_size=26)
+        chart.update_xaxes(tickmode='array',tickvals=SIZES,ticktext=[str(n) for n in SIZES])
         chart.write_html(output/(name+'.html'),include_plotlyjs=True)
         try: chart.write_image(output/(name+'.png'),scale=2)
         except Exception as error:
