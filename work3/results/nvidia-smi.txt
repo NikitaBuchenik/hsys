@@ -1,0 +1,41 @@
+Fri Oct 16 22:57:26 2026       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 595.79                 Driver Version: 595.79         CUDA Version: 13.2     |
++-----------------------------------------+------------------------+----------------------+
+| GPU  Name                  Driver-Model | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA GeForce RTX 2060      WDDM  |   00000000:09:00.0  On |                  N/A |
+| 30%   39C    P8              7W /  160W |     578MiB /   6144MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|    0   N/A  N/A            5036    C+G   ...4__8wekyb3d8bbwe\Video.UI.exe      N/A      |
+|    0   N/A  N/A            7332    C+G   C:\Windows\explorer.exe               N/A      |
+|    0   N/A  N/A            9688    C+G   ...y\StartMenuExperienceHost.exe      N/A      |
+|    0   N/A  N/A           10536    C+G   ...h_cw5n1h2txyewy\SearchApp.exe      N/A      |
+|    0   N/A  N/A           11224    C+G   ...IA app\CEF\NVIDIA Overlay.exe      N/A      |
+|    0   N/A  N/A           11284    C+G   ...5n1h2txyewy\TextInputHost.exe      N/A      |
+|    0   N/A  N/A           11616    C+G   ...App_cw5n1h2txyewy\LockApp.exe      N/A      |
+|    0   N/A  N/A           11624    C+G   ...ntrolPanel\SystemSettings.exe      N/A      |
+|    0   N/A  N/A           12928    C+G   ...IA app\CEF\NVIDIA Overlay.exe      N/A      |
+|    0   N/A  N/A           13476    C+G   ...em_tray\lghub_system_tray.exe      N/A      |
+|    0   N/A  N/A           14120    C+G   ...8bbwe\PhoneExperienceHost.exe      N/A      |
+|    0   N/A  N/A           14432    C+G   ...s\Win64\EpicGamesLauncher.exe      N/A      |
+|    0   N/A  N/A           15040    C+G   ...\cef.win64\steamwebhelper.exe      N/A      |
+|    0   N/A  N/A           15284    C+G   ...99wrpcg\ModernFlyoutsHost.exe      N/A      |
+|    0   N/A  N/A           16112    C+G   ...aries\Win64\EpicWebHelper.exe      N/A      |
+|    0   N/A  N/A           16504    C+G   ...ayRenderer-Win64-Shipping.exe      N/A      |
+|    0   N/A  N/A           16632    C+G   ...Chrome\Application\chrome.exe      N/A      |
+|    0   N/A  N/A           17120    C+G   ...2p2nqsd0c76g0\app\ChatGPT.exe      N/A      |
+|    0   N/A  N/A           17164    C+G   ...26wp6bftszj\TranslucentTB.exe      N/A      |
+|    0   N/A  N/A           17668    C+G   ...\codex-computer-use-swift.exe      N/A      |
+|    0   N/A  N/A           18784    C+G   ...Chrome\Application\chrome.exe      N/A      |
+|    0   N/A  N/A           19588    C+G   ...xyewy\ShellExperienceHost.exe      N/A      |
++-----------------------------------------------------------------------------------------+

@@ -1,0 +1,98 @@
+{
+  "context": {
+    "date": "2026-10-16T22:56:26+07:00",
+    "host_name": "DESKTOP-A51FFLC",
+    "executable": "build\\bin\\matrix_benchmark.exe",
+    "num_cpus": 12,
+    "mhz_per_cpu": 3793,
+    "caches": [
+      {
+        "type": "Data",
+        "level": 1,
+        "size": 32768,
+        "num_sharing": 2
+      },
+      {
+        "type": "Instruction",
+        "level": 1,
+        "size": 32768,
+        "num_sharing": 2
+      },
+      {
+        "type": "Unified",
+        "level": 2,
+        "size": 524288,
+        "num_sharing": 2
+      },
+      {
+        "type": "Unified",
+        "level": 3,
+        "size": 16777216,
+        "num_sharing": 6
+      }
+    ],
+    "load_avg": [],
+    "library_version": "v1.9.1",
+    "library_build_type": "release",
+    "json_schema_version": 1
+  },
+  "rows": [
+    {
+      "n": 16,
+      "shared_memory_seconds": 1.148216322697662e-05,
+      "naive_seconds": 1.093006705140779e-05,
+      "speedup_naive_over_shmem": 0.9519170591242149,
+      "shared_repetitions": 5,
+      "naive_repetitions": 5
+    },
+    {
+      "n": 32,
+      "shared_memory_seconds": 1.2874440945486923e-05,
+      "naive_seconds": 1.0594698605556341e-05,
+      "speedup_naive_over_shmem": 0.8229249448901519,
+      "shared_repetitions": 5,
+      "naive_repetitions": 5
+    },
+    {
+      "n": 64,
+      "shared_memory_seconds": 1.1905983219959717e-05,
+      "naive_seconds": 1.2401789249189699e-05,
+      "speedup_naive_over_shmem": 1.0416434342355523,
+      "shared_repetitions": 5,
+      "naive_repetitions": 5
+    },
+    {
+      "n": 128,
+      "shared_memory_seconds": 2.1165021715176825e-05,
+      "naive_seconds": 2.1839270467125166e-05,
+      "speedup_naive_over_shmem": 1.0318567474686244,
+      "shared_repetitions": 5,
+      "naive_repetitions": 5
+    },
+    {
+      "n": 256,
+      "shared_memory_seconds": 5.687794494213928e-05,
+      "naive_seconds": 6.91453279693603e-05,
+      "speedup_naive_over_shmem": 1.215679083337142,
+      "shared_repetitions": 5,
+      "naive_repetitions": 5
+    },
+    {
+      "n": 512,
+      "shared_memory_seconds": 0.0003803694112329987,
+      "naive_seconds": 0.00048026805728265594,
+      "speedup_naive_over_shmem": 1.2626358563529796,
+      "shared_repetitions": 5,
+      "naive_repetitions": 5
+    },
+    {
+      "n": 1024,
+      "shared_memory_seconds": 0.002980347623323138,
+      "naive_seconds": 0.003851918912913701,
+      "speedup_naive_over_shmem": 1.2924394734258369,
+      "shared_repetitions": 5,
+      "naive_repetitions": 5
+    }
+  ],
+  "theoretical_complexity": "Theta(n^3)"
+}
