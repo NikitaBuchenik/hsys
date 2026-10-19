@@ -126,3 +126,5 @@ def main():
     args.output.parent.mkdir(parents=True,exist_ok=True);doc.save(args.output)
     print(f"Report saved to {args.output}; validated {total} tests and 343 parameterized shapes.")
 if __name__=="__main__":main()
+
+# DOCX report is generated in CI from the committed test and benchmark artifacts.
