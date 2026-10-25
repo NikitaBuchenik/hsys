@@ -35,6 +35,8 @@ target_include_directories(matrix_core PUBLIC core/include)
 target_link_libraries(matrix_core PUBLIC CUDA::cudart)
 add_executable(matrix_tests tests/matrix_tests.cu)
 target_link_libraries(matrix_tests PRIVATE matrix_core eigen_headers GTest::gtest_main)
+# Eigen is a CPU reference only; do not compile its math helpers for CUDA.
+target_compile_definitions(matrix_tests PRIVATE EIGEN_NO_CUDA EIGEN_DONT_VECTORIZE)
 add_executable(matrix_benchmark benchmarks/matrix_benchmark.cu)
 target_link_libraries(matrix_benchmark PRIVATE matrix_core benchmark::benchmark)
 enable_testing()
