@@ -1,0 +1,10 @@
+﻿
+build\CMakeFiles\3.31.6-msvc6\CMakeCUDACompiler.cmake:1:set(CMAKE_CUDA_COMPILER "H:/CUDA/bin/nvcc.exe")
+build\CMakeFiles\3.31.6-msvc6\CMakeCUDACompiler.cmake:4:set(CMAKE_CUDA_COMPILER_ID "NVIDIA")
+build\CMakeFiles\3.31.6-msvc6\CMakeCUDACompiler.cmake:5:set(CMAKE_CUDA_COMPILER_VERSION "13.0.88")
+build\CMakeFiles\3.31.6-msvc6\CMakeCXXCompiler.cmake:1:set(CMAKE_CXX_COMPILER 
+"H:/BuildTools2022/VC/Tools/MSVC/14.39.33519/bin/Hostx64/x64/cl.exe")
+build\CMakeFiles\3.31.6-msvc6\CMakeCXXCompiler.cmake:3:set(CMAKE_CXX_COMPILER_ID "MSVC")
+build\CMakeFiles\3.31.6-msvc6\CMakeCXXCompiler.cmake:4:set(CMAKE_CXX_COMPILER_VERSION "19.39.33523.0")
+
+

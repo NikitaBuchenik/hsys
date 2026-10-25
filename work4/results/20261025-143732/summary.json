@@ -1,0 +1,156 @@
+{
+  "context": {
+    "date": "2026-10-25T14:37:52+07:00",
+    "host_name": "DESKTOP-A51FFLC",
+    "executable": ".\\build\\bin\\matrix_benchmark.exe",
+    "num_cpus": 12,
+    "mhz_per_cpu": 3793,
+    "caches": [
+      {
+        "type": "Data",
+        "level": 1,
+        "size": 32768,
+        "num_sharing": 2
+      },
+      {
+        "type": "Instruction",
+        "level": 1,
+        "size": 32768,
+        "num_sharing": 2
+      },
+      {
+        "type": "Unified",
+        "level": 2,
+        "size": 524288,
+        "num_sharing": 2
+      },
+      {
+        "type": "Unified",
+        "level": 3,
+        "size": 16777216,
+        "num_sharing": 6
+      }
+    ],
+    "load_avg": [],
+    "library_version": "v1.9.1",
+    "library_build_type": "release",
+    "json_schema_version": 1,
+    "baseline": "work3 shared-memory FP32, tile16",
+    "compute_capability": "7.5",
+    "cuda_driver": "13020",
+    "cuda_runtime": "13020",
+    "gpu": "NVIDIA GeForce RTX 2060",
+    "gpu_memory_bytes": "6441992192",
+    "wmma_precision": "FP16 inputs, FP32 accumulator/output"
+  },
+  "rows": [
+    {
+      "n": 16,
+      "WMMA_seconds": 1.3214689817839166e-05,
+      "WMMA_min": 1.133512113366837e-05,
+      "WMMA_max": 2.8690356984749722e-05,
+      "SharedFP32_seconds": 1.0541485750862627e-05,
+      "SharedFP32_min": 1.0272452434515299e-05,
+      "SharedFP32_max": 1.2881987164928429e-05,
+      "SharedFP16_seconds": 1.1414371454449908e-05,
+      "SharedFP16_min": 1.0572435678927453e-05,
+      "SharedFP16_max": 1.4838435750562694e-05,
+      "speedup_previous": 0.7977096622148597,
+      "speedup_same_input": 0.8637638576307013
+    },
+    {
+      "n": 32,
+      "WMMA_seconds": 1.465232107906059e-05,
+      "WMMA_min": 1.0636368058286295e-05,
+      "WMMA_max": 1.8234774755291425e-05,
+      "SharedFP32_seconds": 1.1563817546910955e-05,
+      "SharedFP32_min": 1.0474063234063002e-05,
+      "SharedFP32_max": 1.5477485455628676e-05,
+      "SharedFP16_seconds": 1.2139997116576014e-05,
+      "SharedFP16_min": 1.160919262182523e-05,
+      "SharedFP16_max": 1.4553781521760396e-05,
+      "speedup_previous": 0.7892140422336658,
+      "speedup_same_input": 0.8285374754669483
+    },
+    {
+      "n": 64,
+      "WMMA_seconds": 1.3425053562386305e-05,
+      "WMMA_min": 1.2799446326520341e-05,
+      "WMMA_max": 1.7130987682801523e-05,
+      "SharedFP32_seconds": 1.236041691615606e-05,
+      "SharedFP32_min": 1.1443698472074014e-05,
+      "SharedFP32_max": 1.3048745406747572e-05,
+      "SharedFP16_seconds": 1.2358477448043782e-05,
+      "SharedFP16_min": 1.092158344903049e-05,
+      "SharedFP16_max": 1.4008073239179373e-05,
+      "speedup_previous": 0.920697772915179,
+      "speedup_same_input": 0.9205533065930697
+    },
+    {
+      "n": 128,
+      "WMMA_seconds": 1.638768622883165e-05,
+      "WMMA_min": 1.5532094266086195e-05,
+      "WMMA_max": 1.781860313095968e-05,
+      "SharedFP32_seconds": 1.645463255584203e-05,
+      "SharedFP32_min": 1.4815745684164335e-05,
+      "SharedFP32_max": 1.7289970920745048e-05,
+      "SharedFP16_seconds": 1.5610389583683887e-05,
+      "SharedFP16_min": 1.4894571944356606e-05,
+      "SharedFP16_max": 1.638868802221062e-05,
+      "speedup_previous": 1.0040851604110286,
+      "speedup_same_input": 0.9525682494591441
+    },
+    {
+      "n": 256,
+      "WMMA_seconds": 2.7052399986422738e-05,
+      "WMMA_min": 2.6529172150133937e-05,
+      "WMMA_max": 2.8294393028658125e-05,
+      "SharedFP32_seconds": 4.7625685839147395e-05,
+      "SharedFP32_min": 4.750915676714184e-05,
+      "SharedFP32_max": 4.838832955004179e-05,
+      "SharedFP16_seconds": 4.7761198761090634e-05,
+      "SharedFP16_min": 4.766550927512301e-05,
+      "SharedFP16_max": 4.808068665104273e-05,
+      "speedup_previous": 1.7604976217655415,
+      "speedup_same_input": 1.7655068971722059
+    },
+    {
+      "n": 512,
+      "WMMA_seconds": 9.356118812237294e-05,
+      "WMMA_min": 9.337486852734842e-05,
+      "WMMA_max": 9.4241025437802e-05,
+      "SharedFP32_seconds": 0.00030377325674480344,
+      "SharedFP32_min": 0.0003037574478585855,
+      "SharedFP32_max": 0.00030379969790885153,
+      "SharedFP16_seconds": 0.0003066721233275383,
+      "SharedFP16_min": 0.00030602587918856665,
+      "SharedFP16_max": 0.0003074133465150755,
+      "speedup_previous": 3.246787079568555,
+      "speedup_same_input": 3.2777707239718663
+    },
+    {
+      "n": 1024,
+      "WMMA_seconds": 0.0006125066237418409,
+      "WMMA_min": 0.0006117792173764584,
+      "WMMA_max": 0.0006128093664042289,
+      "SharedFP32_seconds": 0.002351147825978383,
+      "SharedFP32_min": 0.0023482925791700345,
+      "SharedFP32_max": 0.002361630652131152,
+      "SharedFP16_seconds": 0.0023281688173611968,
+      "SharedFP16_min": 0.002327980824311575,
+      "SharedFP16_max": 0.0023310890813668583,
+      "speedup_previous": 3.8385671841637814,
+      "speedup_same_input": 3.8010508411129815
+    }
+  ],
+  "test_count": 225,
+  "repetitions": 5,
+  "commit": "b7761f2b296c9dca2dee577ae3cd33ba7dbe8ee1",
+  "source_status": "?? build-log.txt\n",
+  "benchmark_sha256": "740844344ea3af3d2b77bb35a6e04b2b0adeb320e2e3cb08211140003ccc271d",
+  "tests_sha256": "80e2c2f3e2a65501066520426643c96297fa6dcfd01b130d525a172116acf4f6",
+  "chart_sha256": {
+    "complexity.png": "07d4c6b26a66a1ae9a892696b06a2091e3b7f8301b2195e0147d29e237679995",
+    "speedup.png": "6e76e6dfc60cf83a3177fe25cb1d3d99323cf61252ca896537034f916706e3d8"
+  }
+}
