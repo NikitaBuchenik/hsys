@@ -1,0 +1,20 @@
+{
+  "CMakeLists.txt": "863c61cdd6a7eea836104ed2ae24bd3afae7c8d0e352829d31e07f086e412838",
+  "README.md": "5fa053c773b2e10d83dc0ada524103b9bb9bd6b51317787a850b34c4e3970aa8",
+  "build.cmd": "4c81eff28f24b2e652e737433dc669395ceec991f79973559144f8a9eb467688",
+  "report.cmd": "450c5c5f174e69485c596421a4939bcc5bb07d072c5e83816938d9eea162b9b9",
+  "run.cmd": "07cf9122dca92dbe8a02f4e929fca91eeb683f2d2a16a0c8260ab5191f48688f",
+  "core/include/cuda_check.cuh": "8c7886438303d0640e5294b5f3623ef39a8677f1b13e8bd64e3a92e261faef2f",
+  "core/include/event_timer.cuh": "950a5f7800ac92a4eedad0d447b26536b5b72e8fe588358f6b506151848eadd4",
+  "core/include/reduction.cuh": "b32ab22f429797a854f2daf0fadfb30f02291b6278f758cdd8ba391bdef71f2c",
+  "core/include/vector.cuh": "9e3ab5540a27c4b3b3598dcba44cb1ccd09e666a6caef40a1451e05f09698384",
+  "core/src/reduction.cu": "4a01febf97235ffa195d3ae66add0ae2fbcce5d3a5356a6e490250659a4c87cd",
+  "tests/vector_tests.cpp": "b13fc6af72c7422b894300c05a3dfeaa95f073d6a3e7c3face9becf1c3281a66",
+  "benchmarks/vector_benchmark.cpp": "c36a44060860b9170c95dbcb969a841e81dc2d41891b518141a06292ba6d2bff",
+  "scripts/analyze.py": "310e2fd345a55fbff9607461faace4e304081add8c53cbd295abe0a162b4c137",
+  "scripts/build.ps1": "2bc47085df36f6ce839d0f9d4f65ea353a91829989941901c7f974543d33a895",
+  "scripts/make_report.py": "8c7ece40c2295b45a401fd5b7dcb57c617d2252f88ba2bbf46d7a54bb6d60321",
+  "scripts/report.ps1": "f3a55517ab57213d52b18b5f889ca37dff20c4d777595dba85288e0fd9b4ab66",
+  "scripts/requirements.txt": "390d83178bb6d23d747f053a1c5e2d0628e598b88fc4b4be176f4eaa364314cc",
+  "scripts/run.ps1": "17bcc135e2357c66dc8427c33d5dbaafe357f6b1d51482dc4bf5340a8ef8922f"
+}

@@ -121,5 +121,5 @@ TEST(Ownership, MoveAndHostCopies) {
     EXPECT_THROW(c.copy_to_host(result, 4), std::invalid_argument);
 }
 TEST(Ownership, Overflow) {
-    EXPECT_THROW(DeviceBuffer<float>(std::numeric_limits<std::size_t>::max()), std::length_error);
+    EXPECT_THROW((void)DeviceBuffer<float>{std::numeric_limits<std::size_t>::max()}, std::length_error);
 }

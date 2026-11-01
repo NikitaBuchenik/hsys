@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="24" failures="0" disabled="0" errors="0" time="0.17" timestamp="2026-11-01T19:00:35.379" name="AllTests">
+  <testsuite name="Edges" tests="5" failures="0" disabled="0" skipped="0" errors="0" time="0.138" timestamp="2026-11-01T19:00:35.379">
+    <testcase name="Empty" file="H:\hsys\work5\tests\vector_tests.cpp" line="49" status="run" result="completed" time="0.126" timestamp="2026-11-01T19:00:35.379" classname="Edges" />
+    <testcase name="MoreThanTwoPasses" file="H:\hsys\work5\tests\vector_tests.cpp" line="53" status="run" result="completed" time="0.001" timestamp="2026-11-01T19:00:35.506" classname="Edges" />
+    <testcase name="WarpAndBlockTails" file="H:\hsys\work5\tests\vector_tests.cpp" line="58" status="run" result="completed" time="0.007" timestamp="2026-11-01T19:00:35.507" classname="Edges" />
+    <testcase name="ChunkedWithTail" file="H:\hsys\work5\tests\vector_tests.cpp" line="65" status="run" result="completed" time="0.001" timestamp="2026-11-01T19:00:35.515" classname="Edges" />
+    <testcase name="ReusedWorkspace" file="H:\hsys\work5\tests\vector_tests.cpp" line="85" status="run" result="completed" time="0." timestamp="2026-11-01T19:00:35.516" classname="Edges" />
+  </testsuite>
+  <testsuite name="Validation" tests="1" failures="0" disabled="0" skipped="0" errors="0" time="0." timestamp="2026-11-01T19:00:35.517">
+    <testcase name="RejectsInvalidArguments" file="H:\hsys\work5\tests\vector_tests.cpp" line="99" status="run" result="completed" time="0." timestamp="2026-11-01T19:00:35.517" classname="Validation" />
+  </testsuite>
+  <testsuite name="Ownership" tests="2" failures="0" disabled="0" skipped="0" errors="0" time="0." timestamp="2026-11-01T19:00:35.517">
+    <testcase name="MoveAndHostCopies" file="H:\hsys\work5\tests\vector_tests.cpp" line="108" status="run" result="completed" time="0." timestamp="2026-11-01T19:00:35.517" classname="Ownership" />
+    <testcase name="Overflow" file="H:\hsys\work5\tests\vector_tests.cpp" line="123" status="run" result="completed" time="0." timestamp="2026-11-01T19:00:35.518" classname="Ownership" />
+  </testsuite>
+  <testsuite name="AllSizes/ReductionTest" tests="16" failures="0" disabled="0" skipped="0" errors="0" time="0.031" timestamp="2026-11-01T19:00:35.518">
+    <testcase name="MatchesEigenSum/0" value_param="(4-byte object &lt;00-00 00-00&gt;, 1)" file="H:\hsys\work5\tests\vector_tests.cpp" line="22" status="run" result="completed" time="0.002" timestamp="2026-11-01T19:00:35.518" classname="AllSizes/ReductionTest" />
+    <testcase name="MatchesEigenSum/1" value_param="(4-byte object &lt;00-00 00-00&gt;, 2)" file="H:\hsys\work5\tests\vector_tests.cpp" line="22" status="run" result="completed" time="0.002" timestamp="2026-11-01T19:00:35.520" classname="AllSizes/ReductionTest" />
+    <testcase name="MatchesEigenSum/2" value_param="(4-byte object &lt;00-00 00-00&gt;, 3)" file="H:\hsys\work5\tests\vector_tests.cpp" line="22" status="run" result="completed" time="0.001" timestamp="2026-11-01T19:00:35.522" classname="AllSizes/ReductionTest" />
+    <testcase name="MatchesEigenSum/3" value_param="(4-byte object &lt;00-00 00-00&gt;, 127)" file="H:\hsys\work5\tests\vector_tests.cpp" line="22" status="run" result="completed" time="0.001" timestamp="2026-11-01T19:00:35.524" classname="AllSizes/ReductionTest" />
+    <testcase name="MatchesEigenSum/4" value_param="(4-byte object &lt;00-00 00-00&gt;, 129)" file="H:\hsys\work5\tests\vector_tests.cpp" line="22" status="run" result="completed" time="0.001" timestamp="2026-11-01T19:00:35.526" classname="AllSizes/ReductionTest" />
+    <testcase name="MatchesEigenSum/5" value_param="(4-byte object &lt;00-00 00-00&gt;, 512)" file="H:\hsys\work5\tests\vector_tests.cpp" line="22" status="run" result="completed" time="0.002" timestamp="2026-11-01T19:00:35.528" classname="AllSizes/ReductionTest" />
+    <testcase name="MatchesEigenSum/6" value_param="(4-byte object &lt;00-00 00-00&gt;, 541)" file="H:\hsys\work5\tests\vector_tests.cpp" line="22" status="run" result="completed" time="0.001" timestamp="2026-11-01T19:00:35.530" classname="AllSizes/ReductionTest" />
+    <testcase name="MatchesEigenSum/7" value_param="(4-byte object &lt;00-00 00-00&gt;, 1037)" file="H:\hsys\work5\tests\vector_tests.cpp" line="22" status="run" result="completed" time="0.001" timestamp="2026-11-01T19:00:35.532" classname="AllSizes/ReductionTest" />
+    <testcase name="MatchesEigenSum/8" value_param="(4-byte object &lt;01-00 00-00&gt;, 1)" file="H:\hsys\work5\tests\vector_tests.cpp" line="22" status="run" result="completed" time="0.001" timestamp="2026-11-01T19:00:35.534" classname="AllSizes/ReductionTest" />
+    <testcase name="MatchesEigenSum/9" value_param="(4-byte object &lt;01-00 00-00&gt;, 2)" file="H:\hsys\work5\tests\vector_tests.cpp" line="22" status="run" result="completed" time="0.002" timestamp="2026-11-01T19:00:35.535" classname="AllSizes/ReductionTest" />
+    <testcase name="MatchesEigenSum/10" value_param="(4-byte object &lt;01-00 00-00&gt;, 3)" file="H:\hsys\work5\tests\vector_tests.cpp" line="22" status="run" result="completed" time="0.001" timestamp="2026-11-01T19:00:35.538" classname="AllSizes/ReductionTest" />
+    <testcase name="MatchesEigenSum/11" value_param="(4-byte object &lt;01-00 00-00&gt;, 127)" file="H:\hsys\work5\tests\vector_tests.cpp" line="22" status="run" result="completed" time="0.001" timestamp="2026-11-01T19:00:35.539" classname="AllSizes/ReductionTest" />
+    <testcase name="MatchesEigenSum/12" value_param="(4-byte object &lt;01-00 00-00&gt;, 129)" file="H:\hsys\work5\tests\vector_tests.cpp" line="22" status="run" result="completed" time="0.002" timestamp="2026-11-01T19:00:35.541" classname="AllSizes/ReductionTest" />
+    <testcase name="MatchesEigenSum/13" value_param="(4-byte object &lt;01-00 00-00&gt;, 512)" file="H:\hsys\work5\tests\vector_tests.cpp" line="22" status="run" result="completed" time="0.001" timestamp="2026-11-01T19:00:35.544" classname="AllSizes/ReductionTest" />
+    <testcase name="MatchesEigenSum/14" value_param="(4-byte object &lt;01-00 00-00&gt;, 541)" file="H:\hsys\work5\tests\vector_tests.cpp" line="22" status="run" result="completed" time="0.001" timestamp="2026-11-01T19:00:35.545" classname="AllSizes/ReductionTest" />
+    <testcase name="MatchesEigenSum/15" value_param="(4-byte object &lt;01-00 00-00&gt;, 1037)" file="H:\hsys\work5\tests\vector_tests.cpp" line="22" status="run" result="completed" time="0.001" timestamp="2026-11-01T19:00:35.547" classname="AllSizes/ReductionTest" />
+  </testsuite>
+</testsuites>
